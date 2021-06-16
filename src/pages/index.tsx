@@ -7,6 +7,7 @@ import { CardList } from '../components/CardList';
 import { api } from '../services/api';
 import { Loading } from '../components/Loading';
 import { Error } from '../components/Error';
+import { useEffect } from 'react';
 
 export default function Home(): JSX.Element {
   const {
@@ -19,7 +20,7 @@ export default function Home(): JSX.Element {
   } = useInfiniteQuery(
     'images',
     // TODO AXIOS REQUEST WITH PARAM
-    ,
+    {}
     // TODO GET AND RETURN NEXT PAGE PARAM
   );
 
