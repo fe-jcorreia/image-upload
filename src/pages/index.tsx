@@ -20,7 +20,7 @@ export default function Home(): JSX.Element {
     'images',
 
     ({ pageParam }) =>
-      api.get('http://localhost:3000/api/images', {
+      api.get('/api/images', {
         params: { after: pageParam },
       }),
 
