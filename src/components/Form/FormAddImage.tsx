@@ -59,7 +59,6 @@ export function FormAddImage({ closeModal }: FormAddImageProps): JSX.Element {
       return api.post('http://localhost:3000/api/images/', newCardCreation);
     },
     {
-      // TAlVEZ ESTEJA ERRADO
       onSuccess: () => {
         queryClient.invalidateQueries('images', { refetchActive: true });
       },
